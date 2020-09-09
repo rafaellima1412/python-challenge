@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Python Challenge - Backend
 
 Este desafio tem como objetivo testar os seus conhecimentos de desenvolvedor python e avaliar a sua forma de 
@@ -68,6 +67,4 @@ qualquer decisão ou mudança que achou necessário para a realização do proje
 
 Use o contato abaixo para sanar quaisquer dúvidas.
 * Tiago Custódio: [**tiago.custodio@itriad.org.br**](tiago.custodio@itriad.org.br)
-=======
-# python-challenge
->>>>>>> d3ae99d921181af7e191e4c311901f143193d10e
+
