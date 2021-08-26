@@ -1,3 +1,13 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Veiculo, Valor
+
+
+class VeiculoAdmin(admin.ModelAdmin):
+    pass
+
+class ValorAdmin(admin.ModelAdmin):
+    pass
+
+admin.site.register(Veiculo, VeiculoAdmin)
+admin.site.register(Valor, ValorAdmin)
