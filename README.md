@@ -30,6 +30,7 @@ Os donos precisam de relatórios de faturamento por período. Não aceitar entra
 de preços.
 
 # O que deve ser entregue
+
 * Readme.md com instruções para iniciar ou buildar(caso esteja usando docker) o serviço.
 * Readme.md com instruções de cada endpoint.
 * Requirements.txt, caso não esteja em um ambiente docker.
@@ -49,11 +50,13 @@ Exemplo do json ( Você está livre parar alterar os campos e formatos )
 ```
 
 # Tecnologias Back-End (Obrigatório)
+
 * Flask, Django;
 * Banco de dados relacionais, 'SQL-based', preferencialmente postgresql;
 
 
 # Diferenciais
+
 * Realização de testes unitários;
 * Utilização de Docker;
 * Organização e clareza nas ideias;
@@ -66,5 +69,6 @@ qualquer decisão ou mudança que achou necessário para a realização do proje
 ## Contatos
 
 Use o contato abaixo para sanar quaisquer dúvidas.
+
 * Tiago Custódio: [**tiago.custodio@itriad.org.br**](tiago.custodio@itriad.org.br)
 
