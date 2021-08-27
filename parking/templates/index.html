@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block body %}
+<title>Página Principal</title>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Entrada</h5>
+          <p class="card-text">
+            Realize abaixo o registro de entrada do veículo.
+          </p>
+          <a href="{% url 'parking:entrada' %}" class="btn btn-primary">
+            Entrada no Estacionamento
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Veículos</h5>
+          <p class="card-text">
+            Verique o veículo no estacionamento.
+          </p>
+              <form action="/placa/" method="post">
+                {% csrf_token %}
+                  <label for="team_name">Enter name: </label>
+                  <input id="placa" type="text" name="placa" value="Inserir placa">
+                  <input type="submit" value="OK" class="btn btn-primary">
+              </form>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
