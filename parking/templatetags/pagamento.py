@@ -42,5 +42,3 @@ def pagamento(placa):
             else:
                 valor_final = valor.periodoTarde
                 return valor_final
-
-
