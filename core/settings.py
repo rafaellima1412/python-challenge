@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # App personalizado
     'parking',
+    # builtins
+    'rest_framework',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [

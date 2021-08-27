@@ -5,6 +5,7 @@ __pycache__/
 .vscode/
 *.sqlite3
 migrations/
+static/
 # C extensions
 *.so
 .env
