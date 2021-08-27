@@ -19,8 +19,8 @@ from django.urls.conf import include
 from parking.api.routers import router as parking_router
 
 urlpatterns = [
+    
     path('', include('parking.urls')),
-    # path('', include(parking_router.urls)),
     path('admin/', admin.site.urls),
 
 ]

@@ -1,5 +1,6 @@
-from .models import Veiculo
 from django import forms
+
+from .models import Veiculo
 
 
 class InsereVeiculoForm(forms.ModelForm):
