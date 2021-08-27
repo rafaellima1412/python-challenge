@@ -16,6 +16,9 @@
           <p class="card-text">
             <b>Valor Total:</b> {% pagamento veiculo.placa %}
           </p>
+          <p class="card-text">
+                <b>Horário:</b>{{veiculo.data_entrada|date:'H:i'}}
+          </p>
           <a href="{% url 'parking:saida' veiculo.placa %}" class="btn btn-success">
             Realizar Pagamento
           </a>

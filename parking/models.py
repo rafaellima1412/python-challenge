@@ -1,10 +1,12 @@
 from django.db import models
 from djmoney.models.fields import MoneyField
 
+
 class Veiculo(models.Model):
     placa = models.CharField('placa', max_length=8, null=False)
     modelo = models.CharField('modelo', max_length=100, null=False)
     cor = models.CharField('cor', max_length=50, null=False)
+    ativo = models.BooleanField('ativo', default=True)
     data_entrada = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
