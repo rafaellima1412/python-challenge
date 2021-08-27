@@ -1,7 +1,8 @@
-from parking.models import Valor, Veiculo
 from django.test import TestCase
 
-# from parking.behavior import Parking
+from parking.behavior import Parking, periodo_manha
+from parking.models import Valor, Veiculo
+
 
 class VeiculoModelTestCase(TestCase):
     def setUp(self) -> None:
@@ -16,8 +17,9 @@ class VeiculoModelTestCase(TestCase):
         """Teste para validar se objeto de valor é criado."""
         self.assertEqual(self.valor.periodoTarde_currency,  'BRL')
 
-class ValorTestCase(TestCase):
-    def test_periodo_max_length(self):
-        valor = Valor.objects.get(id=1)
-        max_length = valor._meta.get_field('periodoFDS').max_length
-        self.assertEquals(max_length, 14)
+class ParkingTesteCase(TestCase):
+    def setUp(self):
+        self.parking = Parking(8, periodo  = periodo_manha)
+    def test_periodo_usado(self):
+        self.assertTrue(self.parking)
+
